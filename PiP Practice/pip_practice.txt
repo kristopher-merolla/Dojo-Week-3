@@ -1,0 +1,25 @@
+pip install Django
+	-This will install the Django framework, most updated version
+
+pip list
+	-This will list the installed packages for python with their versions
+
+pip install Django (“Django (1.11.1)” for example)
+	-Since Django is already installed, this will note that and provide the file paths for the installed files
+	:: Requirement already satisfied: Django in /usr/local/lib/python2.7/site-packages
+	:: Requirement already satisfied: pytz in /usr/local/lib/python2.7/site-packages (from Django)
+
+pip freeze
+	-Similar to list, the installed packages are shown but in a different “requirements” format (“Django==1.11.1” for example)
+
+First cd into your Desktop directory (cd ~/Desktop), then run this command: pip freeze > requirements.txt. What do you see when you ls? What's inside this file?
+	-This creates a text file with the “pip freeze” information
+
+pip uninstall Django
+	-This uninstalls the Django framework, gives a “y/“ option before execution
+
+pip show Django
+	-Since Django was uninstalled in the previous step, this returns nothing, but generally this will display information about the installed package(s) listed
+
+pip search Flask. This one might take a moment to execute.
+	-THis will list all the python packages, can be combined with a search option
