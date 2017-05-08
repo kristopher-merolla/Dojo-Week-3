@@ -20,4 +20,9 @@ print x[:4]
 print x[2:4]
 #the output would be [2,5];
 print len(x)
+for count in range(0,5):
+	print "looping - ",count
+my_list = [4,"dog",99,["list","inside","another"],"hello world!"]
+for element in my_list:
+	print element
 
