@@ -15,7 +15,7 @@ import turtle
 # 	DIST += 5
 # # # The above for loop prints a pyramid
 
-from turtle import *
+from turtle import * # this imports all turtle functions, instead of just using "turtle.left(90) you can use left(90)"
 
 def moveUp(a):
 	left(90)
