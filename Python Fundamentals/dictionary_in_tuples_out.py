@@ -15,7 +15,7 @@ my_dict = {
 def dict2tuple(my_dict):
 	my_array = []
 	for i in range (0,len(my_dict)):
-		tup1 = (my_dict.keys()[i],my_dict[my_dict.keys()[i]])
+		tup1 = (my_dict.keys()[i],my_dict[my_dict.keys()[i]]) #creates a tuple called "tup1" which is then appended to my_array
 		my_array.append(tup1)
 	return my_array
 
