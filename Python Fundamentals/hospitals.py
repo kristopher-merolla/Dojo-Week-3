@@ -59,6 +59,7 @@ class Hospital(object):
 				hospital1.patients.pop(i)
 				print "All patient(s) admitted:",hospital1.patients
 				hospital1.beds_taken -= 1
+				self.bed = None
 				break
 
 
@@ -85,3 +86,5 @@ patient0.discharge()
 patient2.admit() # now that we've discharged someone, we can add in Ben
 patient2.discharge()
 patient1.discharge()
+
+# print patient0.bed
