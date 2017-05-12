@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Page</title>
+	<!-- <link rel='stylesheet' type='text/css' href="{{ url_for('static',filename='css/dojo_style.css')}}"> -->
+</head>
+<body>
+	<form action='/users' method='post' action='/users'>
+	    Name: <input type='text' name='name'><br>
+	    Dojo Location: <select name="location"><option value="San Jose">San Jose</option><option vaue="Seattle">Seattle</option></select>
+	    Favorite Language: <select name="language"><option value="Python">Python</option><option vaue="HTML">HTML</option></select>
+	    Comment:<br><input type='text' name='comment'><br>
+	    <input type='submit' value='Submit'>
+	</form>
+</body>
+</html>

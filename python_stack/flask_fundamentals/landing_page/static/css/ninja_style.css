@@ -1,0 +1,13 @@
+h2 {
+	color: blue;
+}
+
+#big_wrapper {
+	margin: 0px auto;
+	background-color: lightblue;
+}
+
+p {
+	width: 600px;
+	margin-left: 20px;
+}

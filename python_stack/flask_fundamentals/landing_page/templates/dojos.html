@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dojos</title>
+	<link rel='stylesheet' type='text/css' href="{{ url_for('static',filename='css/dojo_style.css')}}">
+</head>
+<body>
+	<h1>Fill in the form...if you dare!</h1>
+	<br>
+	<form action='/users' method='post' action='/users'> <!-- blank action, for now! -->
+	    Name: <input type='text' name='name'><br>
+	    Email: <input type='text' name='email'><br><br>
+	    <input type='submit' value='create user'>
+	</form>
+</body>
+</html>
