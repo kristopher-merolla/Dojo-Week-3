@@ -19,7 +19,7 @@ def button():
 	if (button_press=='add2'):
 		session['count'] += 1
 	if (button_press=='reset'):
-		session['count'] = -1
+		session['count'] = 0
 
 	print session.get('button_press')
 	print session['count']
