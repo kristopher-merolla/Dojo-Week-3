@@ -7,7 +7,7 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV "/Users/AlienOutpost/Desktop/Coding Dojo/Week of May 8 - 12/python_stack/myEnvironments/flaskEnv"
+setenv VIRTUAL_ENV "/Users/AlienOutpost/Desktop/Coding_Dojo/Week_of_May_8_-_12/python_stack/myEnvironments/flaskEnv"
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"

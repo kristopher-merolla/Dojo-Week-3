@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Counter</title>
+	<link rel='stylesheet' type='text/css' href="{{ url_for('static',filename='css/counter_style.css')}}">
+</head>
+<body>
+	<div id="big_wrapper">
+		<h1>Counter</h1>
+		<br>
+		<p>{{session['count']}} times.</p>
+		<br>
+		<br>
+		<form action='/button' method='POST'>
+		<input type='hidden' name ='button_press' value='add2'>
+		<input type='submit' value='Add 2 to count'>
+		</form>
+		<br>
+		<br>
+		<form action='/button' method='POST'>
+		<input type='hidden' name='button_press' value='reset'>
+		<input type='submit' value='Reset count'>
+		</form>
+	</div> <!-- end of big_wrapper -->
+</body>
+</html>

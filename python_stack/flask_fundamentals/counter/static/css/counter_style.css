@@ -1,0 +1,10 @@
+#big_wrapper {
+	margin: 0px auto;
+	padding: 150px 0px;
+	text-align: center;
+	border: 2px solid black;
+}
+
+h1 {
+	color: darkblue;
+}
