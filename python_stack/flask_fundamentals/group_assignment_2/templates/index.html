@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Group Assignment 2</title>
+	<link rel='stylesheet' type='text/css' href="{{ url_for('static',filename='css/counter_style.css')}}">
+</head>
+<body>
+	<div id="big_wrapper">
+		<p>Wins: {{session['win']}}</p>
+		<p>Draws: {{session['draw']}}</p>
+		<p>Losses: {{session['loss']}}</p>
+		<br>
+		<h1>Rock Paper Scissors</h1>
+		<br>
+		<p>{{session['comp_throw_name']}} {{session['button_press']}} {{session['result']}}</p>
+		<br>
+		<br>
+		<form action='/button' method='POST'>
+		<input type='hidden' name ='button_press' value='rock'>
+		<input type='submit' value='Rock'>
+		</form>
+		<form action='/button' method='POST'>
+		<input type='hidden' name='button_press' value='paper'>
+		<input type='submit' value='Paper'>
+		</form>
+		<form action='/button' method='POST'>
+		<input type='hidden' name='button_press' value='scissors'>
+		<input type='submit' value='Scissors'>
+		</form>
+		<br>
+		<br>
+		<form action='/reset' method='POST'>
+		<input type='submit' value='Reset'>
+		</form>
+	</div> <!-- end of big_wrapper -->
+</body>
+</html>
