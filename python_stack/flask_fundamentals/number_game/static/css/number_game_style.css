@@ -14,11 +14,11 @@ h2 {
 }
 
 #too_low {
-	color: red;
+	background-color: red;
 }
 
 #too_high {
-	color: red;
+	background-color: red;
 }
 
 #correct {
