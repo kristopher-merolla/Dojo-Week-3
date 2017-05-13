@@ -1,0 +1,26 @@
+#big_wrapper {
+	background-color: lightblue;
+	width: 600px;
+	height: 600px;
+	margin: 0px auto;
+	border: 1px solid black;
+	text-align: center;
+}
+
+h2 {
+	width: 100px;
+	height: 100px;
+	border: 2px solid black;
+}
+
+#too_low {
+	color: red;
+}
+
+#too_high {
+	color: red;
+}
+
+#correct {
+	background-color: green;
+}
