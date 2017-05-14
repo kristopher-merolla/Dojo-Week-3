@@ -1,0 +1,23 @@
+#big_wrapper {
+	padding-left: 25px;
+}
+
+#gold_amt {
+	display: inline-block;
+	background-color: green;
+	color: white;
+	text-align: center;
+	border: 2px solid black;
+	width: 75px;
+	height: auto;
+}
+
+#action_box {
+	width: 200px;
+	height: 200px;
+	border: 2px solid black;
+	display: inline-block;
+	margin-right: 25px;
+	margin-top: 20px;
+	text-align: center;
+}
