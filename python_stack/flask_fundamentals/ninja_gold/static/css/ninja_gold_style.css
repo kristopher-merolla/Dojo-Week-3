@@ -1,5 +1,9 @@
 #big_wrapper {
-	padding-left: 25px;
+	padding: 25px;
+}
+
+#action_space {
+	text-align: center;
 }
 
 #gold_amt {
@@ -20,4 +24,14 @@
 	margin-right: 25px;
 	margin-top: 20px;
 	text-align: center;
+}
+
+#activity_box {
+	width: auto;
+	height: 200px;
+	border: 2px solid black;
+}
+
+#console {
+	margin: 5px 0px 0px 5px;
 }
