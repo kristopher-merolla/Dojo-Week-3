@@ -3,6 +3,14 @@
 <head>
 	<title>Ninja Gold</title>
 	<link rel='stylesheet' type='text/css' href="{{ url_for('static',filename='css/ninja_gold_style.css')}}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script> <!-- link to jQuery library -->
+	<script>
+		$(document).ready(function(){
+			$("form").submit(function(){	//this will remove the image that was clicked on, the key is the "this" selector
+				$("#console").text("<p id='console'>{{ session['act_scroll'] }}</p><br>");
+			});
+		}); //end of document.ready() load
+	</script>
 </head>
 <body>
 	<div id="big_wrapper">
@@ -50,7 +58,7 @@
 		<p>Activities:</p>
 
 		<div id="activity_box">
-			<p id="console">Activities go here</p>
+			<p id="console">{{ session['activity_box'] }}</p>
 		</div>
 
 	</div>

@@ -30,6 +30,7 @@
 	width: auto;
 	height: 200px;
 	border: 2px solid black;
+	overflow: scroll;	/*use overflow here to setup an activity log*/
 }
 
 #console {
