@@ -17,50 +17,36 @@ def process_money():
 
 	session['building'] = request.form['building']
 
-	if (session.get('activity_box') == None):
-		session['activity_box'] = "Welcome New Player"
-	
-	if (session.get('act_count') == None):	
-		session['act_count'] = 0
-
-	if (session.get('act_scroll') == None):
-		session['act_scroll'] = session['activity_box']
+	if (session.get('activity') == None):
+		session['activity'] = "Welcome New Player"
 
 	if (session['building'] == 'farm'):
 		roll = random.randrange(10, 20)
 		session['gold_amt'] += roll
-		activity = "Earned "+str(roll)+" gold from the farm!"
-		session['activity_box'] = activity
-		session['act_count'] += 1
-		session['act_scroll'] += activity
+		session['activity'] += "<p style='color: green;'> Earned "+str(roll)+" gold from the farm! </p>"
 
 	if (session['building'] == 'cave'):
 		roll = random.randrange(5, 10)
 		session['gold_amt'] += roll
-		activity = "Earned "+str(roll)+" gold from the cave!"
-		session['activity_box'] = activity
-		session['act_count'] += 1
+		session['activity'] += "<p style='color: green;'> Earned "+str(roll)+" gold from the cave! </p>"
 
 	if (session['building'] == 'house'):
 		roll = random.randrange(2, 5)
 		session['gold_amt'] += roll
-		activity = "Earned "+str(roll)+" gold from the house!"
-		session['activity_box'] = activity
-		session['act_count'] += 1
+		session['activity'] += "<p style='color: green;'> Earned "+str(roll)+" gold from the house! </p>"
 
 	if (session['building'] == 'casino'):
 		roll = random.randrange(-50, 50)
 		session['gold_amt'] += roll
 		if (roll >= 0):
-			activity = "Earned "+str(roll)+" gold from the casino! You're lucky!"
-			session['activity_box'] = activity
-			session['act_count'] += 1
+			session['activity'] += "<p style='color: green;'> Earned "+str(roll)+" gold from the casino! You're lucky!</p>"
 		if (roll < 0):
-			activity = "Lost "+str(roll)+" gold from the casnio! Better luck next time..."
-			session['activity_box'] = activity
-			session['act_count'] += 1
+			roll *= -1
+			session['activity'] += "<p style='color: red;'> Lost "+str(roll)+" gold from the casnio! Better luck next time...</p>"
 
-	return render_template("index.html")
+	print session['activity']
+
+	return redirect('/')
 
 app.run(debug=True)
 
