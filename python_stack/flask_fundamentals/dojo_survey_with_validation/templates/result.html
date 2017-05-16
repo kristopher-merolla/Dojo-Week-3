@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landing Page</title>
+	<link rel='stylesheet' type='text/css' href="{{ url_for('static',filename='css/index_styles.css')}}">
+</head>
+<body>
+	<div id="big_wrapper">
+		<h1>Submitted Info:</h1>
+		<div id="left_summary">
+			<p>Your name:</p>
+			<p>Your location:</p>
+			<p>Your favorite language:</p>
+			<p>Your comment:</p>
+		</div>
+		<div id="right_summary">
+			<p>{{ name }}</p>
+			<p>{{ location }}</p>
+			<p>{{ language }}</p>
+			<p>{{ comment }}</p>
+		</div>
+		<br>
+		<form action='/'>
+			<input type='submit' value='Go Back'>
+		</form>
+	</div>
+</body>
+</html>
