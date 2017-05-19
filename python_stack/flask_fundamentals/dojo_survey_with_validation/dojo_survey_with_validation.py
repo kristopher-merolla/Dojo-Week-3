@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, redirect, session
-app = Flask(__name__)
 
 app = Flask(__name__)
 app.secret_key = 'ThisIsSecret' # you need to set a secret key for security purposes
@@ -8,7 +7,7 @@ app.secret_key = 'ThisIsSecret' # you need to set a secret key for security purp
 def landing_page():
 	return render_template("index.html") #setting landing page as our form page
 
-
+r
 @app.route('/users', methods=['POST']) #method for posting a form, redirect back to home page (or any other page!)
 def users():
 	name = request.form['name']
